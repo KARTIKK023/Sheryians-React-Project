@@ -1,4 +1,4 @@
-name: my first Deployment
+name: my second Deployment
 
 on:
   push:
@@ -20,4 +20,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync . s3://myawsbucketthisismyfirstbucket01 --delete
+        run: aws s3 sync . s3://myawsbucketthisismyfirstbucket02 --delete
